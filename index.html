@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyBuddy - ИИ-помощник для учебы</title>
+    <meta
+      name="description"
+      content="StudyBuddy помогает учиться по вашим лекциям, конспектам и файлам: чат с ИИ, цитаты из источников, тесты и анализ слабых тем."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="logo" href="#top" aria-label="StudyBuddy">
+        <span class="logo-mark">
+          <img src="assets/logo-transparent.png" alt="" />
+        </span>
+        <span>StudyBuddy</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#idea">Идея</a>
+        <a href="#features">Функции</a>
+        <a href="#mvp">MVP</a>
+        <a href="#contact">Заявка</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">ИИ-помощник по твоим материалам</p>
+            <h1>StudyBuddy - учись как никогда не учился</h1>
+            <p class="hero-text">
+              Загружай лекции, конспекты и файлы. StudyBuddy превращает их в
+              единое учебное пространство: отвечает с цитатами, генерирует
+              тесты и показывает, какие темы стоит подтянуть.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#idea" data-scroll-target="idea">
+                Попробовать бесплатно
+              </a>
+              <a class="btn btn-ghost" href="#features">Смотреть функции</a>
+            </div>
+            <div class="hero-stats" aria-label="Ключевые преимущества">
+              <div>
+                <strong>5 мин</strong>
+                <span>на повторение</span>
+              </div>
+              <div>
+                <strong>PDF/TXT</strong>
+                <span>в MVP</span>
+              </div>
+              <div>
+                <strong>RAG + LLM</strong>
+                <span>в основе</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Интерфейс StudyBuddy">
+            <img
+              class="phone-shot"
+              src="assets/ui-home.png"
+              alt="Главный экран нового интерфейса StudyBuddy"
+            />
+            <div class="float-card float-card-top">
+              <span class="mini-icon">AI</span>
+              <p>Ответ по лекциям с источниками</p>
+            </div>
+            <div class="float-card float-card-bottom">
+              <span class="mini-icon">%</span>
+              <p>Слабые темы и прогресс</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="idea" class="section problem-section">
+        <div class="container">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Главная боль</p>
+            <h2>Учеба ломается не из-за лени, а из-за хаоса</h2>
+            <p>
+              Материалы разбросаны по чатам, папкам и ссылкам. Непонятно, с
+              чего начать, как связаны темы и что уже забыто.
+            </p>
+          </div>
+          <div class="pain-grid">
+            <article class="pain-card">
+              <span>01</span>
+              <h3>Материалы разбросаны</h3>
+              <p>PDF, записи, ссылки и конспекты живут в разных местах.</p>
+            </article>
+            <article class="pain-card">
+              <span>02</span>
+              <h3>Нет единого контекста</h3>
+              <p>Темы трудно связать между собой без общей картины.</p>
+            </article>
+            <article class="pain-card">
+              <span>03</span>
+              <h3>Страшно начать</h3>
+              <p>Перед экзаменом сложно выбрать первый маленький шаг.</p>
+            </article>
+            <article class="pain-card">
+              <span>04</span>
+              <h3>Материал забывается</h3>
+              <p>Без повторения и проверки знания быстро проседают.</p>
+            </article>
+            <article class="pain-card">
+              <span>05</span>
+              <h3>Нет обратной связи</h3>
+              <p>Неясно, где ошибки и какие темы требуют внимания.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section solution-section">
+        <div class="container split">
+          <div class="screen-stack">
+            <img src="assets/ui-storage.png" alt="Экран хранилища файлов StudyBuddy" />
+            <img src="assets/ui-chat.png" alt="Экран ИИ-ассистента StudyBuddy" />
+          </div>
+          <div class="section-heading">
+            <p class="eyebrow">Решение</p>
+            <h2>StudyBuddy работает с твоими источниками напрямую</h2>
+            <p>
+              Это личный ИИ-эксперт по загруженным лекциям, конспектам и
+              файлам. Он структурирует материалы, связывает темы, проверяет
+              знания и дает понятную обратную связь по прогрессу.
+            </p>
+            <ul class="check-list">
+              <li>Загрузка учебных материалов в одно пространство.</li>
+              <li>Чат, который отвечает с опорой на твои документы.</li>
+              <li>Микросессии для дороги, перерыва или вечера перед парой.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" class="section how-section">
+        <div class="container">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Как работает</p>
+            <h2>От файла до понятного учебного ритма</h2>
+          </div>
+          <div class="steps">
+            <article>
+              <span class="step-number">1</span>
+              <h3>Загрузи материалы</h3>
+              <p>PDF и TXT попадают в базу, разбиваются на смысловые фрагменты.</p>
+            </article>
+            <article>
+              <span class="step-number">2</span>
+              <h3>Задай вопрос</h3>
+              <p>RAG находит релевантные куски, а LLM формирует ответ.</p>
+            </article>
+            <article>
+              <span class="step-number">3</span>
+              <h3>Проверь себя</h3>
+              <p>Сервис генерирует тест и показывает статистику попыток.</p>
+            </article>
+            <article>
+              <span class="step-number">4</span>
+              <h3>Повторяй умнее</h3>
+              <p>StudyBuddy замечает слабые темы и подстраивает следующие вопросы.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section features-section">
+        <div class="container">
+          <div class="section-heading narrow">
+            <p class="eyebrow">Ключевые функции</p>
+            <h2>Все, что нужно для учебы по своим источникам</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-icon">UP</span>
+              <h3>Загрузка материалов</h3>
+              <p>Собирай PDF, TXT, лекции и конспекты в одном учебном хранилище.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">AI</span>
+              <h3>Чат с ИИ</h3>
+              <p>Задавай вопросы по своим источникам, а не по абстрактной базе знаний.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">QT</span>
+              <h3>Ответы с цитатами</h3>
+              <p>Проверяй достоверность: под ответом видны фрагменты из файла.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">TS</span>
+              <h3>Генерация тестов</h3>
+              <p>Одно нажатие - и появляется интерактивная проверка знаний.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">ER</span>
+              <h3>Анализ ошибок</h3>
+              <p>Сервис выделяет проседающие темы и объясняет, куда двигаться дальше.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon">RT</span>
+              <h3>Персональный ритм</h3>
+              <p>Короткие повторения вписываются в расписание и поддерживают привычку.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="mvp" class="section mvp-section">
+        <div class="container split reverse">
+          <div class="section-heading">
+            <p class="eyebrow">MVP и roadmap</p>
+            <h2>Первый релиз сфокусирован на самом ценном сценарии</h2>
+            <p>
+              Минимально жизнеспособный продукт закрывает путь от загрузки
+              материалов до ответа, цитаты и тестирования.
+            </p>
+            <div class="mvp-tags" aria-label="Состав MVP">
+              <span>PDF/TXT</span>
+              <span>Векторная база</span>
+              <span>RAG + LLM</span>
+              <span>Чат</span>
+              <span>Тестирование</span>
+            </div>
+          </div>
+          <div class="roadmap-card">
+            <div class="roadmap-line"></div>
+            <article>
+              <span>01</span>
+              <h3>Макет и загрузка</h3>
+              <p>Интерактивные экраны, база пользователей, файлы и чанки.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>LLM + RAG</h3>
+              <p>Смысловой поиск, ответ с контекстом и ссылками на источники.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Чат и тесты</h3>
+              <p>Диалог, карточки источников, генерация вопросов, XP и история.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>Полировка</h3>
+              <p>Поиск, темы, экспорт, уведомления и мобильный релиз.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof-section">
+        <div class="container proof-grid">
+          <img src="assets/ui-storage.png" alt="Хранилище файлов StudyBuddy" />
+          <img src="assets/ui-chat.png" alt="Чат с ИИ-ассистентом StudyBuddy" />
+          <img src="assets/ui-test.png" alt="Создание теста в StudyBuddy" />
+          <img src="assets/ui-profile.png" alt="Профиль и статистика StudyBuddy" />
+        </div>
+      </section>
+
+      <section id="survey" class="section survey-section">
+        <div class="container form-layout">
+          <div class="section-heading">
+            <p class="eyebrow">Микро-опрос</p>
+            <h2>Помоги понять, каким должен быть первый запуск</h2>
+            <p>
+              Ответ сохранится локально в браузере. Сейчас это быстрый прототип
+              без серверной части.
+            </p>
+          </div>
+          <form class="panel-form" id="surveyForm">
+            <fieldset>
+              <legend>Пользовались бы вы нашим сервисом?</legend>
+              <div class="choice-options">
+                <label><input type="radio" name="useService" value="Да" required /> <span>Да</span></label>
+                <label><input type="radio" name="useService" value="Нет" /> <span>Нет</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Сколько вы готовы платить за подписку в месяц?</legend>
+              <div class="price-options">
+                <label><input type="radio" name="price" value="0 ₽" required /> <span>0&nbsp;₽</span></label>
+                <label><input type="radio" name="price" value="199 ₽" /> <span>199&nbsp;₽</span></label>
+                <label><input type="radio" name="price" value="399 ₽" /> <span>399&nbsp;₽</span></label>
+                <label><input type="radio" name="price" value="699 ₽" /> <span>699&nbsp;₽</span></label>
+                <label><input type="radio" name="price" value="999+ ₽" /> <span>999+&nbsp;₽</span></label>
+              </div>
+            </fieldset>
+            <button class="btn btn-primary" type="submit">Отправить ответ</button>
+            <p class="form-message" data-survey-message role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container form-layout">
+          <div class="section-heading">
+            <p class="eyebrow">Ранний доступ</p>
+            <h2>Оставь заявку на StudyBuddy</h2>
+            <p>
+              Напишем, когда будет готов первый прототип с загрузкой файлов,
+              чатом и тестами по материалам.
+            </p>
+            <p class="contact-direct">
+              Для связи: <a href="https://t.me/prosto_m0h" target="_blank" rel="noreferrer">@prosto_m0h</a>
+            </p>
+          </div>
+          <form class="panel-form" id="contactForm">
+            <label>
+              Имя
+              <input type="text" name="name" placeholder="Как к вам обращаться" required />
+            </label>
+            <label>
+              Telegram или email
+              <input
+                type="text"
+                name="contact"
+                placeholder="@username или name@email.com"
+                required
+              />
+            </label>
+            <label>
+              Комментарий
+              <textarea
+                name="comment"
+                rows="4"
+                placeholder="Что для вас важнее всего в таком сервисе?"
+              ></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Оставить заявку</button>
+            <p class="form-message" data-contact-message role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>StudyBuddy</span>
+        <span>ИИ-пространство для учебы по своим материалам</span>
+        <a href="https://t.me/prosto_m0h" target="_blank" rel="noreferrer">@prosto_m0h</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
